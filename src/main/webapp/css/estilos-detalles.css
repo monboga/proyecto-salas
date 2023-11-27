@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el diseño del header y el NavBar */
+
+
+.header {
+    background: url('../img/bg-blue.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-logo {
+    width: 200px;
+}
+
+.img-sidebar-logo {
+    width: 80px;
+    margin: auto;
+}
+
+.img-descripcion {
+    width: 250px;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+.izquierda,
+.derecha {
+    flex: 1;
+    overflow: hidden;
+}
+
+/*lado izquierdo*/
+
+.izquierda {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    text-align: center; /* Centrar el contenido */
+}
+
+.item {
+    flex: 0 0 100%;
+    display: none
+ }
+
+ .item h2 {
+    color: #fdfdfe; 
+    text-align: center;
+}
+
+/*carrusel*/
+
+.carrusel {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+
+
+.item {
+    flex: 0 0 100%;
+    display: none;
+    
+}
+
+img {
+    width: 100%; /* Ajusta el ancho al 100% */
+    height: auto;
+}    
+
+.botones-carrusel {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton-carrusel {
+    background-color: #54a0d2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-carrusel:hover {
+    background-color: #2980b9;
+}
+
+.boton-carrusel:first-child {
+    margin-right: 10px; 
+}
+
+.boton-carrusel:last-child {
+    margin-left: 10px;
+}
+
+/*lado derecho*/
+
+.derecha {
+    background-color: #ecf0f1;
+    padding: 20px;
+    text-align: justify;
+}
+
+.derecha h3{
+    text-align: center;
+}
+
+
+/*boton*/
+
+.reservar-btn-container {
+    text-align: center;
+    margin-top: 70px; 
+}
+
+.reservar-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.reservar-btn:hover {
+    background-color: #2980b9;
+}
+
+
+@media(max-width: 992px) {
+    .sidebar {
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+}
+
+
+/* Estilos del footer */
+
+.footer {
+    background: url("../img/footer-bg.png");
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width: 992px) {
+    .sidebar {
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }
+
+   
+}

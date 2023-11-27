@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home -Canaco Servytur Monterrey</title>
+        <!-- Link de Bootstrap CSS-->
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+        <!-- Link de Archivo CSS -->
+        <link rel="stylesheet" href="css/estilos.css" />
+        <!-- Link de Font Awesome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- imagen del icono en la pestaña del navegador -->
+        <link rel="shortcut icon" href="img/logo-icon.png"/>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <!--NavBar-->
+                <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/LOGO-140-VECTORES-02.png" alt="" class="img-logo" />
+                        </a>
+                        <!--boton toggle-->
+                        <button
+                            class="navbar-toggler shadow-none border-0"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar"
+                            aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation"
+                            >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--barra lateral-->
+                        <div
+                            class="sidebar offcanvas offcanvas-start"
+                            tabindex="-1"
+                            id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel"
+                            >
+                            <!--barra lateral header-->
+                            <div class="offcanvas-header border-bottom">
+                                <img
+                                    src="img/LOGO-140-VECTORES-04.png"
+                                    class="img-sidebar-logo offcanvas-title"
+                                    id="offcanvasNavbarLabel"
+                                    />
+                                <button
+                                    type="button"
+                                    class="btn-close btn-close-white shadow-none border-0"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                    ></button>
+                            </div>
+                            <!--cuerpo de barra lateral-->
+                            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4">
+                                <ul
+                                    class="navbar-nav justify-content-center align-items-center fs-6 flex-grow-1 pe-3"
+                                    >
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#"
+                                           >Home</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="acerca-de.html">Acerca de</a> <!--Puse el link para que se vinculara-->
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="salas.html">Salas</a> <!--Puse el link para que se vinculara-->
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="reservaciones.html">Reservación</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                                <!--login-->
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center gap-3"
+                                    >
+                                    <a
+                                        href="login.jsp"
+                                        class="text-white text-decoration-none px-3 py-1 btn btn-primary rounded-4"
+                                        >Iniciar Sesión</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!--Descripcion-->
+                <div class="row d-flex flex-wrap-reverse align-items-center text-white">
+                    <div class="col-lg-8 d-flex flex-column">
+                        <!--titulo-->
+                        <h1>
+                            <span class="text-capitalize h5">#servicios</span><br />Conoce los
+                            espacios que tenemos para ti
+                        </h1>
+                        <!--descripcion-->
+                        <p>
+                            En Canaco Monterrey contamos con más de 15 salas para que tus
+                            reuniones de trabajo sean de primer nivel.
+                        </p>
+                        <!--boton-->
+                        <a
+                            href="#renta"
+                            class="text-reset text-start btn btn-primary mt-3 m-auto rounded-4"
+                            >Reservar ahora</a
+                        >
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <img
+                            src="img/LOGO-140-VECTORES-04.png"
+                            alt=""
+                            class="img-descripcion"
+                            />
+                    </div>
+                </div>
+            </div>
+            <img src="img/cut-header.svg" alt="" />
+        </header>
+
+        <!--seccion renta de salas-->
+
+        <div class="container" id="renta">
+            <div class="renta-salas-container">
+                <div class="renta-salas bg-light">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contenido-renta-salas">
+                                <h3 class="heading-renta-salas text-primary">Renta de Salas</h3>
+                                <p class="para-renta-salas">
+                                    Son especiales para juntas, cursos de capacitación,
+                                    entrevistas, seminarios, presentaciones o cualquier reunión
+                                    que tú y tu negocio necesiten para realizar tus actividades
+                                    profesionales de manera eficiente.
+                                </p>
+                                <a href="reservaciones.html" class="btn btn-outline-primary rounded-3 p-2 mt-5">Solicitar</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="img/salaejemplo.png" alt="" class="img-renta-salas" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--catalogos de salas-->
+        <section class="catalogos-salas">
+            <h2 class="heading-catalogos-salas">
+                Salas <span class="text-primary">100% climatizadas</span> y listas para
+                usarse
+            </h2>
+            <div class="container-fluid">
+                <!--carrusel de salas-->
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Planta Baja</h5>
+                                                <p class="card-text">Sala A</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Planta Baja</h5>
+                                                <p class="card-text">Sala B</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 mt-lg-0 mt-sm-3">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Planta Baja</h5>
+                                                <p class="card-text">Sala C</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Planta Baja</h5>
+                                                <p class="card-text">Sala Ocampo</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Planta Baja</h5>
+                                                <p class="card-text">Sala Rayón</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 1</h5>
+                                                <p class="card-text">Pedro Maíz</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 1</h5>
+                                                <p class="card-text">Sala Comercio</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 1</h5>
+                                                <p class="card-text">Sala Servicios</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 1</h5>
+                                                <p class="card-text">Sala Turismo</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 1</h5>
+                                                <p class="card-text">Sala Industria</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 2</h5>
+                                                <p class="card-text">Sala Emprendedores</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 2</h5>
+                                                <p class="card-text">Sala Pymes</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Piso 3</h5>
+                                                <p class="card-text">Terraza</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <!--cards-->
+                                        <div class="card card-catalogos">
+                                            <img
+                                                src="img/espacios.jpg"
+                                                alt=""
+                                                class="card-img-top img-card"
+                                                />
+                                            <div class="card-body">
+                                                <h5 class="card-title">Planta Baja</h5>
+                                                <p class="card-text">Terraza PB</p>
+                                                <a href="#" class="btn-catalogos-salas">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev btn-prev"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="prev"
+                        >
+                        <span
+                            ><i
+                                class="fa-sharp fa-solid fa-arrow-left btn-scroll button-left"
+                                ></i
+                            ></span>
+                    </button>
+                    <button
+                        class="carousel-control-next btn-next"
+                        type="button"
+                        data-bs-target="#carouselExample"
+                        data-bs-slide="next"
+                        >
+                        <span
+                            ><i
+                                class="fa-sharp fa-solid fa-arrow-right btn-scroll button-right"
+                                ></i
+                            ></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--servicios adicionales seccion-->
+        <section class="servicios-adicionales vh-100 bg-light">
+            <div class="container">
+                <div class="row align-content-center vh-100">
+                    <h2 class="heading-servicios-adicionales text-center text-primary py-5">Equipo y Servicios Adicionales</h2>
+                    <div class="col-sm-12 col-md-6">
+                        <h5>Equipos básicos:</h5>
+                        <ul>
+                            <li class="text-primary">Pantalla de proyección.</li>
+                            <li class="text-primary">Internet de alta velocidad.</li>
+                            <li class="text-primary">Pintarrón.</li>
+                            <li class="text-primary">Teléfono.</li>
+                            <li class="text-primary">
+                                Servicio de recepción para asistentes.
+                            </li>
+                            <li class="text-primary">Mobiliario.</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h5>Equipos y servicios adicionales:</h5>
+                        <ul>
+                            <li class="text-primary">Cañon de proyección.</li>
+                            <li class="text-primary">Equipo de sonido.</li>
+                            <li class="text-primary">Servicio de break.</li>
+                            <li class="text-primary">Internet (10 o más dispositivos).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-contacto">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center titulo-info">Conoce nuestros paquetes</h2>
+                    <div class="col-md-12 text-center">
+                        <a href="contacto.html" class="btn btn-primary p-3">
+                            Haz clic aquí
+                        </a>
+                    </div>
+                    <!-- Separacion del botón -->
+                    <div class="w-100 m-2"></div>
+                    <div class="col-md-12 text-center fw-bold">
+                        <p>Más información:</p>
+                        <p>Gabriela Rangel</p>
+                        <p>(81) 81502424 ext. 136</p>
+                        <p>gabriela.rangel@canaco.net</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Pie de página -->
+
+        <footer class="footer text-white text-decoration-none">
+            <div class="container">
+                <nav class="row py-5">
+                    <!-- Logo -->
+                    <a
+                        href=""
+                        class="col-3 text-reset text-uppercase d-flex align-items-center"
+                        ><img src="img/LOGO-140-VECTORES-04.png" alt="" class="img-logo mr-2"
+                          /></a>
+
+                    <!-- Menu -->
+                    <ul class="col-3 list-unstyled">
+                        <li class="fw-bold text-uppercase">Home</li>
+                        <li><a href="acerca-de.html" class="text-reset text-decoration-none">Acerda de</a></li>
+                        <li><a href="salas.html" class="text-reset text-decoration-none">Salas</a></li>
+                        <li><a href="reservaciones.html" class="text-reset text-decoration-none">Reservaciones</a></li>
+                        <li><a href="contacto.html" class="text-reset text-decoration-none">Contacto</a></li>
+                    </ul>
+
+                    <!-- Menu -->
+                    <ul class="col-3 list-unstyled">
+                        <li class="fw-bold text-uppercase">Visitanos</li>
+                        <li>
+                            Melchor Ocampo #411 Poniente, Col. Centro Monterrey Nuevo León.
+                        </li>
+                    </ul>
+
+                    <!-- Redes Sociales -->
+                    <ul class="col-3 list-unstyled">
+                        <li class="fw-bold text-uppercase">Redes Sociales</li>
+                        <li class="d-flex justify-content-between">
+                            <a href="#" class="text-reset">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-reset">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-reset">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- Link de Bootstrap JavaScript -->
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

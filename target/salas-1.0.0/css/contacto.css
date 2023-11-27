@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos para el diseño del header y el NavBar */
+
+.header {
+    background: url('../img/bg-blue.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-logo {
+    width: 200px;
+}
+
+.img-sidebar-logo {
+    width: 80px;
+    margin: auto;
+}
+
+.img-descripcion {
+    width: 250px;
+}
+
+.btn-1, .btn-2 {
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #2EA1FF;
+    color: #ffff;
+    align-items: center;
+
+}
+
+span{
+    color: #2EA1FF;
+}
+
+p{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 35px;
+}
+
+.contactos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.contacto-container {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contacto-izquierdo, .contacto-derecho {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contacto-izquierdo {
+    text-align: center;
+    background-color: #4c99af;
+    color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.parrafo {
+    font-size: 16px;
+}
+
+.logotipos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.logotipo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Espacio entre los logotipos */
+}
+
+.logotipo:last-child {
+    margin-right: 0; /* Elimina el espacio después del último logotipo */
+}
+
+.logotipo:hover {
+    background-color: #555;
+}
+
+
+.contacto-derecho form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-derecho input,
+.contacto-derecho textarea,
+.contacto-derecho button {
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto-derecho button {
+    background-color: #4c74af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto-derecho button:hover {
+    background-color: #a2b7ca;
+}
+
+.logotipo:hover {
+    background-color: #555;
+}
+
+#agradecimiento {
+    margin-top: 15px;
+    color: #60af4c;
+    font-weight: bold;
+}
+
+.oculto {
+    display: none;
+    text-align: center;
+}
+
+/* Estilos del footer */
+
+.footer {
+    background: url("../img/footer-bg.png");
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width: 992px) {
+    .sidebar {
+        background-color: rgba(255,255,255,0.15);
+        backdrop-filter: blur(10px);
+    }
+
+   
+}
