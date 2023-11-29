@@ -2,11 +2,25 @@
 package modelo;
 
 public class Usuario {
-    private int idUsuario;
-    private String nombreUsuario;
-    private String contraseña;
-    private boolean estado;
-    private Roles rol;
+    
+    int idUsuario;
+    String nombreCompleto;
+    String nombreUsuario;
+    String password;
+    int idRol;
+
+    public Usuario() {
+    }
+
+    public Usuario(int idUsuario, String nombreCompleto, String nombreUsuario, String password, int idRol) {
+        this.idUsuario = idUsuario;
+        this.nombreCompleto = nombreCompleto;
+        this.nombreUsuario = nombreUsuario;
+        this.password = password;
+        this.idRol = idRol;
+    }
+    
+    
 
     public int getIdUsuario() {
         return idUsuario;
@@ -14,6 +28,14 @@ public class Usuario {
 
     public void setIdUsuario(int idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public String getNombreCompleto() {
+        return nombreCompleto;
+    }
+
+    public void setNombreCompleto(String nombreCompleto) {
+        this.nombreCompleto = nombreCompleto;
     }
 
     public String getNombreUsuario() {
@@ -24,29 +46,26 @@ public class Usuario {
         this.nombreUsuario = nombreUsuario;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getPassword() {
+        return password;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public Roles getRol() {
-        return rol;
+    public int getIdRol() {
+        return idRol;
     }
 
-    public void setRol(Roles rol) {
-        this.rol = rol;
+    public void setIdRol(int idRol) {
+        this.idRol = idRol;
     }
 
-    public boolean isEstado() {
-        return estado;
-    }
-
-    public void setEstado(boolean estado) {
-        this.estado = estado;
-    }
+    
+    
+    
+    
     
     
     

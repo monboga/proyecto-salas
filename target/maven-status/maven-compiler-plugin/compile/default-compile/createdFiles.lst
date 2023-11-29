@@ -1,6 +1,6 @@
-controlador\srvUsuario.class
-modelo\DAOUsuario.class
-modelo\Comprobar.class
-modelo\Conexion.class
-modelo\Roles.class
+config\Conexion.class
+controlador\Operaciones.class
+interfaces\CRUD.class
+modeloDAO\UsuarioDAO.class
+controlador\Controlador.class
 modelo\Usuario.class

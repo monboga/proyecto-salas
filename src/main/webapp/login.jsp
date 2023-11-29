@@ -1,5 +1,6 @@
+<%@page import="controlador.Operaciones"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page session="true" %>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -104,12 +105,12 @@
                         <div class="col-md-6">
                             <div class="card-body d-flex flex-column my-5 py-5 px-5">
                                 <h1 class="fs-4 text-center fw-bold">Iniciar Sesión</h1>
-                                <form action="srvUsuario?accion=verificar" class="row" method="POST">
+                                <form action="login.jsp" class="row" method="POST">
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="txtUsuario" placeholder="Nombre de Usuario">
+                                        <input type="text" class="form-control" name="txtUsu" placeholder="Nombre de Usuario">
                                     </div>
                                     <div class="mb-3">
-                                        <input type="password" class="form-control" name="txtContraseña" placeholder="Contraseña">
+                                        <input type="password" class="form-control" name="txtPass" placeholder="Contraseña">
                                     </div>
                                     <input type="submit" name="verificar" value="Iniciar Sesion" class="btn btn-primary m-auto py-3 w-auto">
 
@@ -118,6 +119,36 @@
                                         <a href="#" class="btn btn-block"><i class="fa fa-info"></i> Mensaje: </a>
                                     </div>
                                 </form>
+                                <%
+
+                                    Operaciones op = new Operaciones();
+                                    if (request.getParameter("verificar") != null) {
+                                        String nombre = request.getParameter("txtUsu");
+                                        String pass = request.getParameter("txtPass");
+
+                                        HttpSession sesion = request.getSession();
+
+                                        switch (op.verificar(nombre, pass)) {
+                                            case 1:
+
+                                                sesion.setAttribute("user", nombre);
+                                                sesion.setAttribute("rol", "1");
+                                                response.sendRedirect("vista/administrador.jsp");
+                                                break;
+                                            case 2:
+
+                                                sesion.setAttribute("user", nombre);
+                                                sesion.setAttribute("rol", "2");
+                                                response.sendRedirect("vista/empleado.jsp");
+                                                break;
+
+                                            default:
+                                                out.write("<label class='form-label text-warning'>usuario no registrado o credenciales incorrectas</label>");
+                                                break;
+                                        }
+                                    }
+
+                                %>
                             </div>
                         </div>
                     </div>
@@ -125,6 +156,75 @@
 
             </div>
         </section>
+                            
+                             <!-- Seccion de Pie de página -->
+
+        <footer class="footer text-white text-decoration-none">
+            <div class="container">
+                <nav class="row py-5">
+                    <!-- Logo -->
+                    <a
+                        href="index.html"
+                        class="col-3 text-reset text-uppercase d-flex align-items-center"
+                        ><img
+                            src="img/LOGO-140-VECTORES-04.png"
+                            alt=""
+                            class="img-logo mr-2"
+                            /></a>
+
+                    <!-- Menu -->
+                    <ul class="col-3 list-unstyled">
+                        <li>
+                            <a href="index.html" class="fw-bold text-reset text-decoration-none text-uppercase">Home</a>
+                        </li>
+                        <li>
+                            <a href="acerca-de.html" class="text-reset text-decoration-none"
+                               >Acerda de</a
+                            >
+                        </li>
+                        <li>
+                            <a href="salas.html" class="text-reset text-decoration-none"
+                               >Salas</a
+                            >
+                        </li>
+                        <li>
+                            <a href="reservaciones.html" class="text-reset text-decoration-none"
+                               >Reservaciones</a
+                            >
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="text-reset text-decoration-none"
+                               >Contacto</a
+                            >
+                        </li>
+                    </ul>
+
+                    <!-- Menu -->
+                    <ul class="col-3 list-unstyled">
+                        <li class="fw-bold text-uppercase">Visitanos</li>
+                        <li>
+                            Melchor Ocampo #411 Poniente, Col. Centro Monterrey Nuevo León.
+                        </li>
+                    </ul>
+
+                    <!-- Redes Sociales -->
+                    <ul class="col-3 list-unstyled">
+                        <li class="fw-bold text-uppercase">Redes Sociales</li>
+                        <li class="d-flex justify-content-between">
+                            <a href="#" class="text-reset">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-reset">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-reset">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
 
         <!-- link de bootstrap -->
         <script src="bootstrap/bootstrap.bundle.min.js"></script>

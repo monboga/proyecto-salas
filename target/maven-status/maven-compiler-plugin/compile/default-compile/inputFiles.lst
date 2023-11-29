@@ -1,6 +1,6 @@
-C:\Users\regin\OneDrive\Escritorio\Nueva\proyecto-salas\src\main\java\modelo\Comprobar.java
-C:\Users\regin\OneDrive\Escritorio\Nueva\proyecto-salas\src\main\java\modelo\DAOUsuario.java
-C:\Users\regin\OneDrive\Escritorio\Nueva\proyecto-salas\src\main\java\modelo\Usuario.java
-C:\Users\regin\OneDrive\Escritorio\Nueva\proyecto-salas\src\main\java\controlador\srvUsuario.java
-C:\Users\regin\OneDrive\Escritorio\Nueva\proyecto-salas\src\main\java\modelo\Roles.java
-C:\Users\regin\OneDrive\Escritorio\Nueva\proyecto-salas\src\main\java\modelo\Conexion.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\interfaces\CRUD.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\controlador\Operaciones.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\config\Conexion.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\modeloDAO\UsuarioDAO.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\modelo\Usuario.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\controlador\Controlador.java
