@@ -1,6 +1,10 @@
-config\Conexion.class
+modelo\Salas.class
 controlador\Operaciones.class
 interfaces\CRUD.class
+interfaces\CRUDSalas.class
+config\Conexion.class
+modeloDAO\SalasDAO.class
+controlador\ControladorSala.class
 modeloDAO\UsuarioDAO.class
 controlador\Controlador.class
 modelo\Usuario.class

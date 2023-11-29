@@ -15,4 +15,6 @@ public interface CRUD {
     public boolean edit(Usuario usu);
     public boolean eliminar(int id);
     
+    
+    
 }

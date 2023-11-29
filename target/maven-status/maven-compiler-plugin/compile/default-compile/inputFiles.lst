@@ -1,6 +1,10 @@
 C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\interfaces\CRUD.java
 C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\controlador\Operaciones.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\modeloDAO\SalasDAO.java
 C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\config\Conexion.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\modelo\Salas.java
 C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\modeloDAO\UsuarioDAO.java
 C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\modelo\Usuario.java
 C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\controlador\Controlador.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\controlador\ControladorSala.java
+C:\Users\Gabriel Monroy\Desktop\proyecto-salas\src\main\java\interfaces\CRUDSalas.java
