@@ -85,13 +85,13 @@
                         <span class="text nav-text">Salas</span>
                     </li>
                     <li class="nav-link">
-                        <a href="">
+                        <a href="#">
                             <i class="fa-solid fa-calendar-days icon"></i>
                             <span class="text nav-text">Eventos</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="">
+                        <a href="#">
                             <i class="fa-solid fa-clipboard-list icon"></i>
                             <span class="text nav-text">Reservaciones</span>
                         </a>
@@ -112,7 +112,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="../ControladorSala?accion=listar">
+                        <a href="ControladorSala?accion=listar">
                             <i class="fa-solid fa-folder-tree icon"></i>
                             <span class="text nav-text">Catalogos</span>
                         </a>

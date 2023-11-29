@@ -104,7 +104,7 @@
                         <span class="text nav-text">Operaciones</span>
                     </li>
                     <li class="nav-link">
-                        <a href="admon-usuarios.jsp">
+                        <a href="Controlador?accion=listar">
                             <i class="fa-solid fa-users icon"></i>
                             <span class="text nav-text">Usuarios</span>
                         </a>
@@ -116,7 +116,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#admon-catalogos">
+                        <a href="ControladorSala?accion=listar">
                             <i class="fa-solid fa-folder-tree icon"></i>
                             <span class="text nav-text">Catalogos</span>
                         </a>
@@ -159,8 +159,8 @@
                             
                             
                             <td>
-                                <a class="btn btn-warning" href="./Controlador?accion=editar&idUsuario=<%= sala.getIdSala()%>">Editar</a>
-                                <a class="btn btn-danger" href="./Controlador?accion=eliminar&idUsuario=<%= sala.getIdSala()%>">Eliminar</a>
+                                <a class="btn btn-warning" href="./ControladorSala?accion=editar&idUsuario=<%= sala.getIdSala()%>">Editar</a>
+                                <a class="btn btn-danger" href="./ControladorSala?accion=eliminar&idUsuario=<%= sala.getIdSala()%>">Eliminar</a>
                             </td>
 
                         </tr>

@@ -1,8 +1,6 @@
 
 <%@page import="modelo.Salas"%>
 <%@page import="modeloDAO.SalasDAO"%>
-<%@page import="modelo.Usuario"%>
-<%@page import="modeloDAO.UsuarioDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page session="true" %>
 <%
@@ -132,7 +130,7 @@
                     <h1 class="text-primary h1">Catalogo de Salas/Editar</h1>
                     <%                    
                         SalasDAO dao = new SalasDAO();
-                        int id = Integer.parseInt((String) request.getAttribute("idUsuario"));
+                        int id = Integer.parseInt((String) request.getAttribute("idSala"));
 
                         Salas s = (Salas) dao.list(id);
                     %>

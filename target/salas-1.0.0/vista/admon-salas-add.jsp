@@ -85,7 +85,7 @@
                         <span class="text nav-text">Salas</span>
                     </li>
                     <li class="nav-link">
-                        <a href="">
+                        <a href="#">
                             <i class="fa-solid fa-calendar-days icon"></i>
                             <span class="text nav-text">Eventos</span>
                         </a>
@@ -112,7 +112,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#admon-catalogos">
+                        <a href="../ControladorSala?accion=listar">
                             <i class="fa-solid fa-folder-tree icon"></i>
                             <span class="text nav-text">Catalogos</span>
                         </a>
@@ -128,7 +128,7 @@
                     <h1 class="text-primary h3">Catalogo de Salas/Agregar</h1>
                     <form action="ControladorSala">
                         id:<br> 
-                        <input class="form-control" type="text" name="txtSalas" placeholder="Sala:"><br>
+                        <input class="form-control" type="text" name="txtSala" placeholder="Sala:"><br>
                         <input class="form-control" type="text" name="txtPiso" placeholder="Piso: "><br>
                         <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br>
                         <a class="btn btn-primary" href="./ControladorSala?accion=listar">Regresar</a>

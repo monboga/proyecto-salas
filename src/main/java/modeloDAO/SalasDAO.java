@@ -30,7 +30,7 @@ public class SalasDAO implements CRUDSalas {
 
             while (rs.next()) {
                 Salas sal = new Salas();
-
+                sal.setIdSala(Integer.parseInt(rs.getString("idSala")));
                 sal.setNombreSala(rs.getString("nombreSala"));
                 sal.setPiso(rs.getString("piso"));
                 list.add(sal);
