@@ -112,7 +112,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="ControladorSala?accion=listar">
+                        <a href="../ControladorSala?accion=listar">
                             <i class="fa-solid fa-folder-tree icon"></i>
                             <span class="text nav-text">Catalogos</span>
                         </a>

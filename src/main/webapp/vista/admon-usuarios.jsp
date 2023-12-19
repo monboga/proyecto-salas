@@ -68,7 +68,7 @@
                 <div class="menu">
                     <div class="bottom-content">
                         <li class="">
-                            <a href="../login.jsp?cerrar=true">
+                            <a href="login.jsp?cerrar=true">
                                 <i
                                     class="fa-solid fa-right-from-bracket fa-rotate-180 icon"
                                     ></i>
@@ -80,7 +80,7 @@
                         <span class="text nav-text">Home</span>
                     </li>
                     <li class="nav-link">
-                        <a href="administrador.jsp">
+                        <a href="vista/administrador.jsp">
                             <i class="fa-solid fa-house icon"></i>
                             <span class="text nav-text">Recepción</span>
                         </a>
@@ -128,7 +128,7 @@
         <section class="home">
 
             <div class="text container">
-                <p>Catalogo de Usarios</p>
+                <p>Cátalogo de Usuarios</p>
                 <a class="btn btn-primary" href="./Controlador?accion=add">Agregar Usuario</a>
                 <table class="table table-bordered" border="1">
                     <thead>
@@ -141,7 +141,9 @@
                             <th class="text-center">Acciones</th>
                         </tr>
                     </thead>
-                    <%                UsuarioDAO dao = new UsuarioDAO();
+                    <%                
+                        
+                        UsuarioDAO dao = new UsuarioDAO();
                         List<Usuario> list = dao.listar();
                         Iterator<Usuario> iter = list.iterator();
                         Usuario usu = null;

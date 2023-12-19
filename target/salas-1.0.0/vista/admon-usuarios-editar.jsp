@@ -136,7 +136,7 @@
                     %>
                     <h1 class="h3">Modificar Usuario</h1>
                     <form action="Controlador">
-                        <label class="label-control fs-7">id: </label><input type="hidden" name="txtId" value="<%= id%>"><br>
+                        <label class="label-control fs-7">id: <%=id%></label><input class="form-control" type="hidden" name="txtId" value="<%= id%>"><br>
                         <input class="form-control" type="text" name="txtNombre" value="<%= u.getNombreCompleto()%>"><br>
                         <input class="form-control" type="text" name="txtUsuario" value="<%= u.getNombreUsuario()%>"><br>
                         <input class="form-control" type="text" name="txtPassword" value="<%= u.getPassword()%>"><br>

@@ -68,7 +68,7 @@
                 <div class="menu">
                     <div class="bottom-content">
                         <li class="">
-                            <a href="../login.jsp?cerrar=true">
+                            <a href="login.jsp?cerrar=true">
                                 <i
                                     class="fa-solid fa-right-from-bracket fa-rotate-180 icon"
                                     ></i>
@@ -80,7 +80,7 @@
                         <span class="text nav-text">Home</span>
                     </li>
                     <li class="nav-link">
-                        <a href="administrador.jsp">
+                        <a href="vista/administrador.jsp">
                             <i class="fa-solid fa-house icon"></i>
                             <span class="text nav-text">Recepción</span>
                         </a>
@@ -129,7 +129,7 @@
 
             <div class="text container">
                 <p>Catalogo de Salas</p>
-                <a class="btn btn-primary" href="./ControladorSala?accion=add">Agregar Salas</a>
+                <a class="btn btn-primary" href="ControladorSala?accion=add">Agregar Salas</a>
                 <table class="table table-bordered" border="1">
                     <thead>
                         <tr>
@@ -159,8 +159,8 @@
                             
                             
                             <td>
-                                <a class="btn btn-warning" href="./ControladorSala?accion=editar&idUsuario=<%= sala.getIdSala()%>">Editar</a>
-                                <a class="btn btn-danger" href="./ControladorSala?accion=eliminar&idUsuario=<%= sala.getIdSala()%>">Eliminar</a>
+                                <a class="btn btn-warning" href="./ControladorSala?accion=editar&idSala=<%= sala.getIdSala()%>">Editar</a>
+                                <a class="btn btn-danger" href="./ControladorSala?accion=eliminar&idSala=<%= sala.getIdSala()%>">Eliminar</a>
                             </td>
 
                         </tr>

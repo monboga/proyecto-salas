@@ -100,7 +100,7 @@
                         <span class="text nav-text">Operaciones</span>
                     </li>
                     <li class="nav-link">
-                        <a href="admon-usuarios.jsp">
+                        <a href="Controlador?accion=listar">
                             <i class="fa-solid fa-users icon"></i>
                             <span class="text nav-text">Usuarios</span>
                         </a>
